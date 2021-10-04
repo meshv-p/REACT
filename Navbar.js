@@ -34,7 +34,7 @@
 
     'use strict';
 
-    const e = React.createElement;
+    const e1 = React.createElement;
     
     class Navbar extends React.Component {
         constructor(props) {
@@ -47,7 +47,7 @@
           return 'Hey You clicked this.';
         }
     
-        return e(
+        return e1(
           'button',
           { onClick: () => this.setState({ clicked: true }) },
           'click'
@@ -56,5 +56,5 @@
     }
     
     const domContainer = document.querySelector('#Navbar');
-    ReactDOM.render(e(Navbar), domContainer);
+    ReactDOM.render(e1(Navbar), domContainer);
     
