@@ -1,4 +1,4 @@
-    return (
+    const nav = (
         <div>
             <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
                 <div className="container-fluid">
@@ -30,6 +30,11 @@
                 </div>
             </nav>
         </div>
-    )
+    );
+
+    ReactDOM.render(
+        element,
+        document.getElementById('Navbar')
+      );
     
 
