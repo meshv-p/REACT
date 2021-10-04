@@ -1,4 +1,3 @@
-function Navbar() {
     return (
         <div>
             <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -13,7 +12,7 @@ function Navbar() {
                                 <Link className="nav-link active" aria-current="page" to="/">Home</Link>
                             </li>
                             <li className="nav-item">
-                                <Link className="nav-link" to="/article">TextUtils</Link>
+                                <button className="nav-link" onclick={()=>{document.getElementById('meshv').innerHTML = "Hey there this is react website."}}>TextUtils</button>
                             </li>
                             <li className="nav-item">
                                 <Link className="nav-link" to="/footer">Footer</Link>
@@ -33,7 +32,4 @@ function Navbar() {
         </div>
     )
     
-    
-    const nav = document.querySelector('#Navbar');
-ReactDOM.render(e(LikeButton), nav);
-}
+
