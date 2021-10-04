@@ -55,6 +55,6 @@
       }
     }
     
-    const domContainer = document.querySelector('#Navbar');
-    ReactDOM.render(e1(Navbar), domContainer);
+    const nav = document.querySelector('#Navbar');
+    ReactDOM.render(e1(Navbar), nav);
     
