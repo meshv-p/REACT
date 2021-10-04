@@ -1,4 +1,4 @@
-export default function Navbar() {
+function Navbar() {
     return (
         <div>
             <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -32,4 +32,8 @@ export default function Navbar() {
             </nav>
         </div>
     )
+    
+    
+    const nav = document.querySelector('#Navbar');
+ReactDOM.render(e(LikeButton), nav);
 }
