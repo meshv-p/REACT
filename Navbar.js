@@ -34,27 +34,15 @@
 
     'use strict';
 
-    const e1 = React.createElement;
     
-    class Navbar extends React.Component {
-        constructor(props) {
-            super(props);
-            this.state = { clicked: false };
-          }
+    function Navbar() {
         
-      render() {
-        if (this.state.clicked) {
-          return 'Hey You clicked this.';
-        }
-    
-        return e1(
-          'button',
-          { onClick: () => document.getElementById('meshv').innerHTML = "hey" },
-          'click'
-        );
-      }
+
+    return (
+        <button onClick={() => alert('hey')}>
+          alert
+        </button>
+      );
     }
-    
-    const nav = document.querySelector('#Navbar');
-    ReactDOM.render(e1(Navbar), nav);
+    ReactDOM.render(document.getElementById('Navbar'),Navbar);
     
