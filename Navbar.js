@@ -35,14 +35,13 @@
     'use strict';
 
     
-    function Navbar() {
         
 
-    return (
+   const m =  
         <button onClick={() => alert('hey')}>
           alert
         </button>
-      );
-    }
-    ReactDOM.render(document.getElementById('Navbar'),Navbar);
+      ;
+    
+    ReactDOM.render(m,document.getElementById('Navbar'));
     
